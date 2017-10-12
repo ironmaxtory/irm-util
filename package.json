@@ -1,0 +1,34 @@
+{
+  "name": "irm-util",
+  "version": "0.0.1",
+  "description": "Utility for JavaScript.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironmaxtory/irm-util.git"
+  },
+  "keywords": [
+    "util",
+    "utility",
+    "js",
+    "javascript"
+  ],
+  "author": "Hades",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ironmaxtory/irm-util/issues"
+  },
+  "homepage": "https://github.com/ironmaxtory/irm-util#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
