@@ -1,7 +1,6 @@
 /**
  * Dom类型实用工具
  * - Style: 样式类型工具
- *  - getEleAbsTop: 获取元素的绝对坐标y
  */
 
 let Style = {

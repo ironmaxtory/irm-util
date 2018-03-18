@@ -1,9 +1,7 @@
-import UtilEnum from './utils/util_enum.js';
 import UtilDom from './utils/util_dom.js';
-import UtilNode from './utils/util_node.js';
+import UtilUrl from './utils/util_url.js';
 
-export {
-  UtilEnum,
+export default {
   UtilDom,
-  UtilNode,
+  UtilUrl
 };

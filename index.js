@@ -1,1 +1,2 @@
-module.exports = require('./lib/util.js');
+
+module.exports = require('./lib/util.js').default;

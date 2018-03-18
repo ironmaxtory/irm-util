@@ -1,13 +1,13 @@
 {
   "name": "irm-util",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Utility for JavaScript.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cnpm run build && babel-node test.js",
     "build": "babel src -d lib"
   },
   "repository": {
