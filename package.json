@@ -7,8 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "cnpm run build && babel-node test.js",
-    "build": "babel src -d lib"
+    "test": "babel-node test.js",
+    "build": "babel src -d lib --minified --compact --no-comments",
+    "build:test": "npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "qs": "^6.5.1"
   }
 }

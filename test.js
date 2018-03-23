@@ -12,3 +12,5 @@ const filter = Util.UtilFilter(list, 'key', 'value');
 console.log(filter(1));
 console.log(filter(2));
 console.log(filter(3));
+
+console.log(Util.UtilQS.stringify([1,2,3]));
