@@ -24,4 +24,5 @@ const decrypt = (str, isKept)=>{
 export default {
   encrypt,
   decrypt,
+  CryptoJS,
 }
