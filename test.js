@@ -14,3 +14,6 @@ console.log(filter(2));
 console.log(filter(3));
 
 console.log(Util.UtilQS.stringify([1,2,3]));
+
+const CryptoJS = Util.UtilCrypto.CryptoJS;
+console.log(CryptoJS.AES);

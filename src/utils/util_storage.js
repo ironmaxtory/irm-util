@@ -1,3 +1,4 @@
+const window = window?window:{};
 const localStorage = window.localStorage;
 const sessionStorage = window.sessionStorage;
 
