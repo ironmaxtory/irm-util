@@ -1,7 +1,3 @@
-const window = window?window:{};
-const localStorage = window.localStorage;
-const sessionStorage = window.sessionStorage;
-
 const set = function(strg, key, value){
   strg.setItem(key, JSON.stringify(value));
 };
@@ -14,22 +10,22 @@ const remove = function(strg, key){
 
 export default {
   lcSet: (key, value)=>{
-    set(localStorage, key, value);
+    set(window.localStorage, key, value);
   },
   lcGet: (key)=>{
-    return get(localStorage, key);
+    return get(window.localStorage, key);
   },
   lcRemove: (key)=>{
-    remove(localStorage, key);
+    remove(window.localStorage, key);
   },
 
   ssSet: (key, value)=>{
-    set(sessionStorage, key, value);
+    set(window.sessionStorage, key, value);
   },
   ssGet: (key)=>{
-    return get(sessionStorage, key);
+    return get(window.sessionStorage, key);
   },
   ssRemove: (key)=>{
-    remove(sessionStorage, key);
+    remove(window.sessionStorage, key);
   },
 }
