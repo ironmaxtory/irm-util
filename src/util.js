@@ -6,6 +6,7 @@ import UtilRecurse from './utils/util_recurse.js';
 import UtilFilter from './utils/util_filter.js';
 import UtilCrypto from './utils/util_crypto.js';
 import UtilStorage from './utils/util_storage.js';
+import UtilDebouncer from './utils/util_debouce.js';
 
 export default {
   UtilQS,
@@ -15,4 +16,5 @@ export default {
   UtilFilter,
   UtilCrypto,
   UtilStorage,
+  UtilDebouncer,
 };
