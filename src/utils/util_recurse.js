@@ -23,13 +23,12 @@ UtilRecurse.prototype.subscribe = function(listener){
 UtilRecurse.prototype.recurseNode = function(tree, childKey){
   if (typeof tree !== 'object') { return false; }
 
-  this.getListeners().map((listener)=>{
-    listener(tree);
-  });
-
   if (!tree[childKey] || (tree[childKey].length===0)) { return false; }
 
   tree[childKey].map((item)=>{
+    this.getListeners().map((listener)=>{
+      listener(item);
+    });
     this.recurseNode(item, childKey);
   });
 };

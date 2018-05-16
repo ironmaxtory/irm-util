@@ -29,7 +29,8 @@
   "homepage": "https://github.com/ironmaxtory/irm-util#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
