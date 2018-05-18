@@ -34,8 +34,8 @@ UtilRecurse.prototype.recurseNode = function(tree, childKey, lv){
   });
 };
 
-UtilRecurse.prototype.run = function(){
-  this.recurseNode(this.tree, this.childKey);
+UtilRecurse.prototype.run = function(startLv=1){
+  this.recurseNode(this.tree, this.childKey, startLv);
 };
 
 export default UtilRecurse;
