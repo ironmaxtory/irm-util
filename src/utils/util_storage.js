@@ -18,6 +18,9 @@ export default {
   lcRemove: (key)=>{
     remove(window.localStorage, key);
   },
+  lcClear: ()=>{
+    window.localStorage.clear();
+  },
 
   ssSet: (key, value)=>{
     set(window.sessionStorage, key, value);
@@ -27,5 +30,8 @@ export default {
   },
   ssRemove: (key)=>{
     remove(window.sessionStorage, key);
+  },
+  ssClear: ()=>{
+    window.sessionStorage.clear();
   },
 }
