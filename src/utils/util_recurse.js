@@ -1,5 +1,5 @@
 
-function UtilRecurse (tree, childKey) {
+function UtilRecurse (tree, childKey, startTagLv=1) {
   let listeners;
   const init = ()=>{
     listeners = [];
@@ -7,6 +7,7 @@ function UtilRecurse (tree, childKey) {
 
   this.tree = tree;
   this.childKey = childKey;
+  this.startTagLv = startTagLv;
 
   this.getListeners = ()=>{
     return listeners;
@@ -34,8 +35,8 @@ UtilRecurse.prototype.recurseNode = function(tree, childKey, lv){
   });
 };
 
-UtilRecurse.prototype.run = function(startLv=1){
-  this.recurseNode(this.tree, this.childKey, startLv);
+UtilRecurse.prototype.run = function(cb){
+  this.recurseNode(this.tree, this.childKey, this.startTagLv);
 };
 
 export default UtilRecurse;
