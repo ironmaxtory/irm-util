@@ -17,14 +17,21 @@ var GenerateBaseFilter = function(List, keyName, valueName, tipMsg){
     let arr = [];
     let resultArr = [];
 
-    if (typeof key === 'number') {
-      key = key+'';
-    }
+    // if (typeof key === 'number') {
+    //   key = key+'';
+    // }
 
-    if (typeof key === 'string') {
-      arr = key.split(',');
-    } else if (key instanceof Array) {
+    // if (typeof key === 'string') {
+    //   arr = key.split(',');
+    // } else if (key instanceof Array) {
+    //   arr = key;
+    // }
+
+    if (key instanceof Array) {
       arr = key;
+    } else {
+      key = key+'';
+      arr = key.split(',');
     }
     arr.map((item)=>{
       resultArr.push(_filter(List, keyName, item, valueName));
