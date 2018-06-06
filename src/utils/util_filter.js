@@ -17,6 +17,10 @@ var GenerateBaseFilter = function(List, keyName, valueName, tipMsg){
     let arr = [];
     let resultArr = [];
 
+    if (typeof key === 'number') {
+      key = key+'';
+    }
+
     if (typeof key === 'string') {
       arr = key.split(',');
     } else if (key instanceof Array) {
