@@ -9,7 +9,7 @@
   "scripts": {
     "test": "babel-node test.js",
     "build": "babel src -d lib --minified --compact --no-comments",
-    "build:test": "npm run build && npm run test"
+    "build:test": "npm run build && npm run test",
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,8 @@
     "axios": "^0.18.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "husky": "^0.14.3"
   },
   "dependencies": {
     "crypto-js": "^3.1.9-1",
