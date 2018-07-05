@@ -9,7 +9,8 @@
   "scripts": {
     "test": "babel-node test.js",
     "build": "babel src -d lib --minified --compact --no-comments",
-    "build:test": "npm run build && npm run test"
+    "build:test": "npm run build && npm run test",
+    "commit": "npm run build:test && git a . && git commit"
   },
   "repository": {
     "type": "git",

@@ -19,6 +19,6 @@ export default {
   UtilCrypto,
   UtilStorage,
   UtilDebouncer,
-  UtilComm
+  UtilComm,
   UtilBlade,
 };
