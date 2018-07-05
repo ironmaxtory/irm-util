@@ -2,9 +2,10 @@
  * 实现一个全局事件监听的脚本
  * - 用于 H5 与 外界壳的通信，主要用于外界壳主动通知H5
  * - 外界壳可以是 QT / SU 等等
+ * - 订阅/发布者 模式
  */
 
- const DEFAULT_CONFIG = {
+const DEFAULT_CONFIG = {
    needRegister: true,
  };
 
