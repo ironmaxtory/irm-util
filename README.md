@@ -12,3 +12,6 @@ npm install --save irm-util
 // using es6
 import Util from 'irm-util';
 ```
+
+## Notice
+You can read the source code and modified by your own, and build eventually for your customzied project.
